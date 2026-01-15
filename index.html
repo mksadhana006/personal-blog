@@ -18,7 +18,7 @@
 <aside><p>Hi..  I'm Sadhana and welcome to my personal blog</p>
 <p>This is the space is where I share my thoughts,learning journey,and experiences related to technology,creativity,and personal growth</p>
 <p>I'm an aspring full-stack developer who enjoys building a simple and meaaningful web projects.Though this blod,I document what I learn,the challenges I face,and small wins along the way</p>
-<p>I believe consistency and curiosity are the keys to growth.Whether it's coding,teaching,or self improvement,I love exploring new ideas and turning them into something useful</p>
+<p>I believe consistency and curiosity are the keys to growth.Whether it's coding,teaching,or self improvement,I like to do something by my owns whatever it may be because i hope that will help me.</p>
 </aside><hr>
 </center>
 <div style="margin-left:20%;margin-right:20%;">
@@ -33,8 +33,8 @@
 <div class="b2">
 
 <div class="text1">
-  <h2 style="font-style: oblique;">What I Learned While practicing  HTML & CSS..</h2>
-<p>Sharing my experience of learning HTML and CSS ,common mistakes I faced ,and how I improved step by step</p>
+  <h2 style="font-style: oblique;">Experience While practicing  HTML & CSS..</h2>
+<p>At the beginning it is little bit difficult for me because the main problem i faced is aligning the contents after knowing about some tags and their usage it is very interesting to me because it not like c or java or some other coding language </p>
 </div>
 <img src="bglearn.jpg">
 </div>
@@ -58,19 +58,16 @@
   <ul >
     <li>HTML</li>
     <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Responsive Design(basics)</li>
-    <li>Git & GitHub</li>
-    <li>coding</li>
+    <li>JavaScript(basics)</li>
+    <li>problem solving</li>
   </ul>
 </div>
 <div class="box">
   <h1>Hobbies & Interests</h1>
   <ul>
-    <li>Reading Tech Blogs</li>
-    <li>Coding small projects</li>
-    <li>Exploring new web technologies</li> 
-    <li>Listening to tech podcasts</li>
+    <li>problem solving</li>
+    <li>listening music</li>
+    
     <li>singing</li>
   </ul>
 </div></div>
@@ -88,10 +85,11 @@
     <h1 style="color: rgb(106, 67, 23);font-style:oblique;">Contact me</h1>
     <p>If You'd like to connect,ask a question,or share feedback feel free to send a message</p>
     <p></p>
-   <input type="text" placeholder="Your Name" style="margin-bottom: 15px;"><br>
-   <input type="text" placeholder="Your e-mail" style="margin-bottom: 15px;"><br>
-   <textarea placeholder="Your message" rows="5" style="margin-bottom: 15px;"></textarea><br>
-   <button type="submit" style="background-color: rgb(150, 101, 29);border-radius: 5px;color: white;padding:5px;">Send Message</button><br><hr>
+    <form onsubmit="return alrt()">
+   <input type="text" placeholder="Your Name" style="margin-bottom: 15px;" id="n1"><br>
+   <input type="email" placeholder="Your e-mail" style="margin-bottom: 15px;" id="n2"><br>
+   <textarea placeholder="Your message" rows="5" style="margin-bottom: 15px;" id="n3"></textarea><br>
+   <button type="submit" style="background-color: rgb(150, 101, 29);border-radius: 5px;color: white;padding:5px;" onclick="alrt()">Send Message</button></form><br><hr>
    <p>Email:mksadhana006@gmail.com</p>
    <p>GitHub:github.com/mksadhana006</p>
    <a>LinkedIn:</a>
@@ -99,7 +97,9 @@
   </div>
 
   <p>Want to connect? Feel free to reach out!</p>
-  <button style="background-color: rgb(14, 14, 129);color: white;padding:5px;border-radius: 5px;">Contact Me</button></center>
+  <label>Contact Me👉</label>
+<label>8637674471</label>
+</center>
 
   <hr><center><footer>
     <p>&copy; 2025 My Personal Blog. All rights reserved.</p>
@@ -110,5 +110,23 @@
     <a href="https://www.linkedin.com/in/sadhana-m-k-440a81333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
   </section>
   </footer></center>
+  <script>
+    function alrt()
+    {
+
+    
+    let name=document.getElementById("n1");
+    let em=document.getElementById("n2");
+    let msg=document.getElementById("n3");
+    if(name.value==""||em.value==""||msg.value=="")
+  {
+    alert("please fill the required details");
+return false;
+    
+  }
+  alert("your message has been sent successfully");
+  return true;
+}
+  </script>
  
 
